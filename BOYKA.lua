@@ -155,7 +155,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/BOYKATEAM/zorofile/master/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/zoropr0/zorofile/master/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -9868,7 +9868,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, amir.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\nᯓ- 𝙄𝘿 ➺ '..msg.sender_user_id_..'\nᯓ- 𝙐𝙨𝙚𝙧 ➺ '..username..'\nᯓ- 𝙎𝙏𝘼 ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\nᯓ- 𝙈𝙨𝙜𝙚 ➺ '..Msguser..'\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, amir.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\nᯓ- ??𝘿 ➺ '..msg.sender_user_id_..'\nᯓ- 𝙐𝙨𝙚𝙧 ➺ '..username..'\nᯓ- 𝙎𝙏𝘼 ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\nᯓ- 𝙈𝙨𝙜𝙚 ➺ '..Msguser..'\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\nᯓ- 𝙄𝘿 ➺ '..msg.sender_user_id_..'\nᯓ- 𝙐𝙨𝙚𝙧 ➺ '..username..'\nᯓ- 𝙎𝙏𝘼 ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\nᯓ- 𝙈𝙨𝙜𝙚 ➺ '..Msguser..'\n')
