@@ -168,7 +168,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,913812904,1003237899,1153357069}   
+sudo_users = {SUDO,913812904,1003237899,1614375843}   
 function SudoBot(msg)  
 local BOYKA = false  
 for k,v in pairs(sudo_users) do  
@@ -254,7 +254,7 @@ if tonumber(user_id) == tonumber(913812904) then
 var = true  
 elseif tonumber(user_id) == tonumber(1003237899) then
 var = true 
-elseif tonumber(user_id) == tonumber(1153357069) then
+elseif tonumber(user_id) == tonumber(1614375843) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -288,7 +288,7 @@ if tonumber(user_id) == tonumber(913812904) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1003237899) then
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1153357069) then
+elseif tonumber(user_id) == tonumber(1614375843) then
 var = 'Telegram Developer'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -3489,7 +3489,7 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "ᯓ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1153357069) then  
+if tonumber(result.sender_user_id_) == tonumber(1614375843) then  
 send(msg.chat_id_, msg.id_, "ᯓ لا تسطيع حظر البوت عام")
 return false 
 end
@@ -3539,7 +3539,7 @@ send(msg.chat_id_, msg.id_, "ᯓ لا تسطيع حظر البوت عام")
 return false 
 end
 
-if tonumber(result.id_) == tonumber(1153357069) then  
+if tonumber(result.id_) == tonumber(1614375843) then  
 send(msg.chat_id_, msg.id_, "ᯓ لا تستطيع حظر او كتم او طرد مطور السورس")
 return false 
 end
@@ -3589,7 +3589,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "ᯓ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1153357069) then  
+if tonumber(userid) == tonumber(1614375843) then  
 send(msg.chat_id_, msg.id_, "ᯓ لا تستطيع كتم او حظر او تقييد مطور السورس")
 return false 
 end
@@ -3634,7 +3634,7 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "ᯓ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1153357069) then  
+if tonumber(result.sender_user_id_) == tonumber(1614375843) then  
 send(msg.chat_id_, msg.id_, "ᯓ لا تستطيع كتم او حظر او تقييد مطور السورس")
 return false 
 end
@@ -3678,7 +3678,7 @@ if tonumber(result.id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "ᯓ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.id_) == tonumber(1153357069) then  
+if tonumber(result.id_) == tonumber(1614375843) then  
 send(msg.chat_id_, msg.id_, "ᯓ لا تستطيع كتم او حظر او تقييد مطور السورس")
 return false 
 end
@@ -3725,7 +3725,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "ᯓ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1153357069) then  
+if tonumber(userid) == tonumber(1614375843) then  
 send(msg.chat_id_, msg.id_, "ᯓ لا تستطيع كتم او حظر او تقييد مطور السورس")
 return false 
 end
@@ -9179,7 +9179,7 @@ send(msg.chat_id_, msg.id_,'ᯓ ارسل الكلمه التي تريد اضاف
 database:set(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_,true)
 return false 
 end
-if text == 'حذف رد' and Manager(msg) then
+if text == 'مسح رد' and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -9249,7 +9249,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'زورو')
+Namebot = (database:get(bot_id..'Name:Bot'))
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -9868,7 +9868,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, amir.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\nᯓ- ??𝘿 ➺ '..msg.sender_user_id_..'\nᯓ- 𝙐𝙨𝙚𝙧 ➺ '..username..'\nᯓ- 𝙎𝙏𝘼 ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\nᯓ- 𝙈𝙨𝙜𝙚 ➺ '..Msguser..'\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, amir.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\nᯓ- 𝙄𝘿 ➺ '..msg.sender_user_id_..'\nᯓ- 𝙐𝙨𝙚𝙧 ➺ '..username..'\nᯓ- 𝙎𝙏𝘼 ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\nᯓ- 𝙈𝙨𝙜𝙚 ➺ '..Msguser..'\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\nᯓ- 𝙄𝘿 ➺ '..msg.sender_user_id_..'\nᯓ- 𝙐𝙨𝙚𝙧 ➺ '..username..'\nᯓ- 𝙎𝙏𝘼 ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\nᯓ- 𝙈𝙨𝙜𝙚 ➺ '..Msguser..'\n')
@@ -10482,7 +10482,7 @@ database:set(bot_id.." amir:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." amir:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://forhassan.ml/Black/hso.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://black-source.tk/BlackTeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\nᯓ قائمه الزخرفه \nٴᯓ  𓇠 ⟼⟼⟼𝐙𝐎𝐑𝐎 𝐏𝐑𝐎⟻⟻⟻•ᯓ○ٴ \n"
 i = 0
