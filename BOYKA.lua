@@ -10490,7 +10490,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴᯓ  𓇠 ⟼⟼⟼𝐙𝐎𝐑𝐎 𝐏𝐑𝐎⟻⟻⟻•ᯓ○ٴ\nᯓ 彡 .[𝘉𝘖𝘠𝘒𝘈 𝘊𝘩𝘢𝘯𝘯𝘦𝘭](t.me/SOURCE_ZORO_pro)➢ ')
+send(msg.chat_id_, msg.id_, t..'ٴᯓ  𓇠 ⟼⟼⟼𝐙𝐎𝐑𝐎 𝐏𝐑𝐎⟻⟻⟻•ᯓ○ٴ\nᯓ 彡 .[𝐙𝐎𝐑𝐎 𝐏𝐑𝐎](t.me/SOURCE_ZORO_pro)➢ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, 'ᯓ تم تعطيل الابراج')
